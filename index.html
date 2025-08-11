@@ -1,14 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big_Corpo_Food - Recommandation 1</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Présentation BigCorpoFood</title>
+  <style>
+    main {
+      max-width: var(--maxw);
+      margin: 40px auto;
+      padding: var(--pad);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+      padding: 16px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+    }
+    .card a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: bold;
+    }
+    .thumb {
+      height: 140px;
+      background: linear-gradient(#e9f2ff, #fff);
+      border-radius: 8px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+      color: var(--accent);
+    }
+  </style>
 </head>
 <body>
-    <h1>Recommandation #1</h1>
-    
-    <p>Optimiser la synergie inter-départementale pour stimuler la création de valeur durable.</p>
-    <img src="image/perso.jpg" alt="perso">
+  <main>
+    <h1>Présentation BigCorpoFood</h1>
+    <div class="grid">
+      <div class="card">
+        <div class="thumb">Diapo 1</div>
+        <a href="index1.html">Recommandation 1</a>
+      </div>
+      <div class="card">
+        <div class="thumb">Diapo 2</div>
+        <a href="index2.html">Recommandation 2</a>
+      </div>
+      <div class="card">
+        <div class="thumb">Diapo 3</div>
+        <a href="index3.html">Recommandation 3</a>
+      </div>
+      <div class="card">
+        <div class="thumb">Diapo 4</div>
+        <a href="index4.html">Recommandation 4</a>
+      </div>
+    </div>
+  </main>
+</body>
 </html>
